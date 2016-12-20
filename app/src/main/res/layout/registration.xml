@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Patient ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/textView4" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter ID"
+        android:id="@+id/p_id" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:text="Patient Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/textView5" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Name"
+        android:id="@+id/p_name" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <TextView
+        android:text="Patient Age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/textView6" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/p_age"
+        android:hint="Enter Age" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:text="Patient Gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/textView7" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/rgroup"
+        android:layout_height="57dp" >
+
+        <RadioButton
+            android:text="Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/female_rb"
+            android:onClick="rbclick"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/male_rb"
+            android:onClick="rbclick"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/textView8" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/p_phone"
+        android:hint="Enter Phone number" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/P_register"
+        android:onClick="OnRegisterClick" />
+
+</LinearLayout>
