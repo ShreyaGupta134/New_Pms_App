@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">Login_register</string>
-    <string name="emptyString" />
-    <string name="emptystring" />
+    <string-array name="array_patient">
+        <item>Shreya</item>
+        <item>Neetu</item>
+        <item>Priyanka</item>
+        <item>Rai</item>
+        <item>Salman</item>
+        <item>Omar</item>
+        <item>Chauhan</item>
+        <item>Komal</item>
+        <item>Kejriwal</item>
+        <item>Banerjee</item>
+        <item>Mufti</item>
+    </string-array>
 </resources>
