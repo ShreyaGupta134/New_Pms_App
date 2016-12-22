@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent">
 
     <TextView
@@ -13,32 +13,26 @@
         android:textSize="25dp"
         android:layout_weight="1" />
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/TVUsername"
-        android:layout_weight="1"
-        tools:text="@string/emptystring" />
+    <ListView
+        android:layout_width="400dp"
+        android:layout_height="15dp"
+        android:layout_weight="0.32"
+        android:id="@+id/ListViewPatient">
 
-    <Button
-        android:text="Proceed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/p_proceed"
-        android:onClick="B_proceed"
-        android:elevation="0dp" />
-
+    </ListView>
 
     <Space
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_weight="1" />
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="0.25" />
 
-    <SearchView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:id="@+id/search_here"
-        android:orientation="vertical" />
+    <Button
+        android:text="Add"
+        android:layout_width="387dp"
+        android:layout_height="68dp"
+        android:id="@+id/p_proceed"
+        android:layout_weight="0.02"
+        android:onClick="B_proceed"></Button>
+
 
 </LinearLayout>
