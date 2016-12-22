@@ -38,7 +38,7 @@ public class Display extends Activity {
         tv.setText(my_user);*/
     }
 
-    
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
