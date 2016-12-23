@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <TextView
         android:text="Welcome"
@@ -12,6 +13,12 @@
         android:id="@+id/textView"
         android:textSize="25dp"
         android:layout_weight="1" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Search here.."
+        android:id="@+id/edtSearch"/>
 
     <ListView
         android:layout_width="400dp"
