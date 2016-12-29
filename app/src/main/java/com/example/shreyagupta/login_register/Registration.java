@@ -1,6 +1,7 @@
 package com.example.shreyagupta.login_register;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -24,6 +25,15 @@ public class Registration extends Activity {
 
         rg =(RadioGroup) findViewById(R.id.rgroup);
     }
+
+    public void p_history (View vw2) {
+        if (vw2.getId() == R.id.details_history) {
+            Intent intent = new Intent();
+            startActivity(intent);
+        }
+    }
+
+
     public  void rbclick (View vw){
         int radiobuttonclick = rg.getCheckedRadioButtonId();
         RadioButton rb = (RadioButton) findViewById (radiobuttonclick);
@@ -42,7 +52,7 @@ public class Registration extends Activity {
             String name_str= name.getText().toString();
             String age_str = age.getText().toString();
             String phone_str = phone.getText().toString();
-            Contact c=new Contact();
+            Contact c = new Contact();
 
             c.setage(age_str);
             c.setname(name_str);
