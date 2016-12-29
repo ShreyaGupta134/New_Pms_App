@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="wrap_content"
@@ -12,26 +12,20 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView"
         android:textSize="25dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:textAppearance="?android:textAppearanceLarge"/>
 
-    <EditText
+    <TextView
+        android:text="@string/emptyString"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:hint="Search here.."
-        android:id="@+id/edtSearch"/>
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginLeft="82dp"
+        android:layout_marginStart="82dp"
+        android:textSize="25dp"
+        android:id="@+id/TvUsername" />
 
-    <ListView
-        android:layout_width="400dp"
-        android:layout_height="15dp"
-        android:layout_weight="0.32"
-        android:id="@+id/ListViewPatient">
-
-    </ListView>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_weight="0.25" />
 
     <Button
         android:text="Add"
@@ -39,7 +33,36 @@
         android:layout_height="68dp"
         android:id="@+id/p_proceed"
         android:layout_weight="0.02"
-        android:onClick="B_proceed"></Button>
+        android:onClick="B_proceed"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"></Button>
+
+    <Button
+        android:text="Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_proceed"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/button_search"
+        android:onClick="search_click" />
+
+    <Button
+        android:text="ViewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewButton"
+        android:onClick="view_data"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button_search"
+        android:layout_alignLeft="@+id/button_search"
+        android:layout_alignStart="@+id/button_search" />
 
 
-</LinearLayout>
+</RelativeLayout>
