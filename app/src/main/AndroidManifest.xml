@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Display"></activity>
+        <activity android:name=".DataListViewActivity"></activity>
         <activity android:name=".Search_activity"></activity>
         <activity android:name=".Registration"></activity>
         <activity android:name=".History"></activity>
