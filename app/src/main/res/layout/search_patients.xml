@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/search_patients"
+        android:hint="Search here" />
+
+    <Button
+        android:text="enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_click_search"
+        android:onClick="searchOldPatient" />
+
+    <Space
+        android:layout_width="25dp"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="The patient's age:- "
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="Displays age"
+            android:textSize="20dp"
+            android:layout_width="178dp"
+            android:layout_height="92dp"
+            android:id="@+id/display_age"
+            android:layout_weight="3.29" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="The phone number:- "
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView14"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="Displays Contact Number"
+            android:textSize="20dp"
+            android:layout_width="241dp"
+            android:layout_height="92dp"
+            android:id="@+id/display_phone" />
+
+    </LinearLayout>
+</LinearLayout>
