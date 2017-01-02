@@ -25,13 +25,6 @@ public class Registration extends Activity {
         rg =(RadioGroup) findViewById(R.id.rgroup);
     }
 
-    public void OnHistoryClick (View vw2) {
-        if (vw2.getId() == R.id.details_history) {
-            Intent intent = new Intent();
-            startActivity(intent);
-        }
-    }
-
     public  void rbclick (View vw){
         int radiobuttonclick = rg.getCheckedRadioButtonId();
         RadioButton rb = (RadioButton) findViewById (radiobuttonclick);
@@ -60,4 +53,11 @@ public class Registration extends Activity {
         }
 
     }
+    public void OnHistoryClick (View vw2) {
+        if (vw2.getId() == R.id.details_history) {
+            Intent intent = new Intent(Registration.this,History.class);
+            startActivity(intent);
+        }
+    }
 }
+
