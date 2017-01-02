@@ -25,10 +25,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public   static  final  String COLUMN_contact_no="contact_no";
     public   static  final  String COLUMN_name="name";
     public   static  final  String COLUMN_gender="gender";
+    public   static  final  String COLUMN_pres="prescription";
+    public   static  final  String COLUMN_diagnosis="diagnosis";
+    public   static  final  String COLUMN_type="type";
+    public   static  final  String COLUMN_med="medicines";
+
     SQLiteDatabase db;
 
     public static final String TABLE_CREATE="create table contacts (id integer primary key not null , "
-            + "name text not null , age text not null , contact_no text not null);";
+            + "name text not null , age text not null , contact_no text not null , pres text , diagnosis text , type text , med text not null);";
 
     public DatabaseHelper(Context context){
         super(context , DATABASE_NAME , null , DATABASE_VERSION);
@@ -48,6 +53,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 value.put(COLUMN_age,c.getage());
                 value.put(COLUMN_contact_no,c.getContact_no());
                 value.put(COLUMN_name,c.getname());
+                value.put(COLUMN_diagnosis,c.getDiagnosis());
+                value.put(COLUMN_med,c.getMed());
+                value.put(COLUMN_pres,c.getPre_med());
+                value.put(COLUMN_type,c.getType());
                 db.insert(TABLE_NAME , null , value);
     }
 
