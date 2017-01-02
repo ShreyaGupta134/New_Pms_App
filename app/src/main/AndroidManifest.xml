@@ -12,10 +12,15 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <uses-permission android:name="android.permission.READ_CONTACTS" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".Display"></activity>
+        <activity android:name=".Search_activity"></activity>
         <activity android:name=".Registration"></activity>
+        <activity android:name=".History"></activity>
     </application>
+
 </manifest>
