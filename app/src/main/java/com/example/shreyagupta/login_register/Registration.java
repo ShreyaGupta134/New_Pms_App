@@ -59,5 +59,13 @@ public class Registration extends Activity {
             startActivity(intent);
         }
     }
+
+    public void OnExitClick (View vw21) {
+        if (vw21.getId() == R.id.exit_button) {
+            Intent intent = new Intent(Registration.this,MainActivity.class);
+            Toast.makeText(getBaseContext(),"You exited registration",Toast.LENGTH_LONG).show();
+            startActivity(intent);
+        }
+    }
 }
 
