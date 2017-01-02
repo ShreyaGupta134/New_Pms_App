@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+        android:text="Enter your diagnosis type"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/textView9" />
+
+    <EditText
+        android:layout_width="397dp"
+        android:layout_height="120dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/diagnosis_type"
+        android:hint="Enter here ..." />
+
+    <TextView
+        android:text="Enter your diagnosis details"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/textView10" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Diagnosis_history"
+        android:hint="Enter here ..." />
+
+    <TextView
+        android:text="Enter your pre-medications"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/textView11" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/pre_med"
+        android:hint="Enter here ...." />
+
+    <TextView
+        android:text="Prescription"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/textView12" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/pre_medication"
+        android:hint="enter here ..." />
+
+            <Button
+                android:text="SAVE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/save_details"
+                android:onClick="OnClickSaveDetails"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
