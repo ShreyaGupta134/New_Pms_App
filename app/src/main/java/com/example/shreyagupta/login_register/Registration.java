@@ -22,17 +22,15 @@ public class Registration extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registration);
-
         rg =(RadioGroup) findViewById(R.id.rgroup);
     }
 
-    public void p_history (View vw2) {
+    public void OnHistoryClick (View vw2) {
         if (vw2.getId() == R.id.details_history) {
             Intent intent = new Intent();
             startActivity(intent);
         }
     }
-
 
     public  void rbclick (View vw){
         int radiobuttonclick = rg.getCheckedRadioButtonId();
@@ -59,10 +57,7 @@ public class Registration extends Activity {
             c.setContact_no(phone_str);
 
             Helper.insertcontacts(c);
-
-
         }
-
 
     }
 }
