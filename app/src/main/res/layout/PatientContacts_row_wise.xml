@@ -3,12 +3,19 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="40dp"
     android:background="#ff4081">
-
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="Here id"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_id"
+        android:gravity="center"
+        android:textColor="#000000"/>
 
     <TextView
         android:layout_marginTop="10dp"
-        android:hint="Here name"
-        android:layout_width="100dp"
+        android:text="Here name"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:id="@+id/user_name"
         android:gravity="center"
@@ -16,8 +23,8 @@
 
     <TextView
         android:layout_marginTop="10dp"
-        android:hint="Here contact_no"
-        android:layout_width="150dp"
+        android:text="Here contact_no"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textColor="#000000"
@@ -25,8 +32,8 @@
 
     <TextView
         android:layout_marginTop="10dp"
-        android:hint="Here age"
-        android:layout_width="150dp"
+        android:text="Here age"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:id="@+id/user_age"
         android:gravity="center"

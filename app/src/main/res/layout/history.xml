@@ -11,6 +11,32 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical">
+            <TextView
+                android:text="ID"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/textView6" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/patient_ID"
+                android:hint="Enter Id" />
+            <TextView
+                android:text="Date"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/textView5" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/patient_date"
+                android:hint="Enter Date" />
 
             <TextView
         android:text="Enter your diagnosis type"
@@ -23,8 +49,8 @@
         android:layout_height="120dp"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/diagnosis_type"
-        android:hint="Enter here ..." />
+        android:id="@+id/notes"
+        android:hint="enter prescription" />
 
     <TextView
         android:text="Enter your diagnosis details"
@@ -38,10 +64,10 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/Diagnosis_history"
-        android:hint="Enter here ..." />
+        android:hint="enter Diagnosis" />
 
     <TextView
-        android:text="Enter your pre-medications"
+        android:text="Enter prescription details"
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:id="@+id/textView11" />
@@ -52,21 +78,7 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/pre_med"
-        android:hint="Enter here ...." />
-
-    <TextView
-        android:text="Prescription"
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:id="@+id/textView12" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/pre_medication"
-        android:hint="enter here ..." />
+        android:hint="Enter note...." />
 
             <Button
                 android:text="SAVE"

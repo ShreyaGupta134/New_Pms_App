@@ -31,7 +31,11 @@ public class Search_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_patients);
 
+        String name_of_patient = getIntent().getStringExtra("PatientName");
+
+        //TextView tv = (TextView) findViewById(R.id.user_name);
         search_name = (EditText) findViewById(R.id.search_patients);
+        search_name.setText(name_of_patient);
         dis_age = (TextView) findViewById (R.id.display_age);
         dis_phone =(TextView) findViewById (R.id.display_phone);
         dis_phone.setVisibility(View.GONE);

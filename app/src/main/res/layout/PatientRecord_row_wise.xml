@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#ff4081">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:hint="id"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_id"
+        android:gravity="center"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:hint="Date"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_date"
+        android:gravity="center"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:hint="prescription"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:id="@+id/User_presc" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:hint="note"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_note"
+        android:gravity="center"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:hint="diagnosis"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_diag"
+        android:gravity="center"
+        android:textColor="#000000"
+        />
+
+</LinearLayout>

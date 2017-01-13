@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:orientation="horizontal"
@@ -9,25 +10,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.shreyagupta.login_register.MainActivity">
+    tools:context="com.example.shreyagupta.login_register.MainActivity"
+
+    >
 
     <TextView
         android:text="User Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView3" />
-
-    <Button
-        android:text="login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Blogin"
-        android:onClick="OnButtonClick"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="121dp"
-        android:layout_marginEnd="121dp" />
 
     <TextView
         android:text="Password"
@@ -48,7 +39,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/TFpassword"
-        android:hint="ENter your password" />
+        android:hint="Enter your password" />
 
     <EditText
         android:layout_width="match_parent"
@@ -61,5 +52,27 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:hint="Enter your name" />
+
+    <Button
+        android:text="login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Blogin"
+        android:onClick="OnButtonClick"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="121dp"
+        android:layout_marginEnd="121dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        app:srcCompat="@mipmap/cross"
+        android:id="@+id/imageView"
+        android:scaleType="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp" />
 
 </RelativeLayout>

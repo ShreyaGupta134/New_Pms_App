@@ -8,11 +8,13 @@ public class DataProvider {
 
     private String name;
     private String age;
-    private  String Contact_no;
+    private String Contact_no,id;
+
 
     public String getContact_no() {
 
         return Contact_no;
+
     }
 
     public void setContact_no(String contact_no) {
@@ -22,6 +24,14 @@ public class DataProvider {
     public String getAge() {
 
         return age;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public void setAge(String age) {
@@ -39,11 +49,15 @@ public class DataProvider {
         this.name = name;
     }
 
-    public DataProvider(String name, String age, String Contact_no){
+     public DataProvider(String name, String age, String Contact_no,String id){
 
-        this.name=name;
-        this.age=age;
-        this.Contact_no=Contact_no;
+         this.name=name;
+         this.age=age;
+         this.Contact_no=Contact_no;
+         this.id=id;
 
-    }
+     }
+
+
+
 }

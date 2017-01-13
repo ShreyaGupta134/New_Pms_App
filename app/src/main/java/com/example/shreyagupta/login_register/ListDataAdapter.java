@@ -11,23 +11,29 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * Created by Shreya Gupta on 02-01-2017.
  */
 
+
+
+
 public class ListDataAdapter extends ArrayAdapter {
+
+
     List list= new ArrayList();
-    public ListDataAdapter(Context context, int resource) {
+
+
+    public ListDataAdapter(Context context, int resource, List<String> strings) {
         super(context, resource);
-
-
     }
+
+
 
     static class Lhandler {
 
-        TextView p_name , p_phone , p_age ;
+        TextView name,phone,age,id;
     }
 
     @Override
@@ -44,33 +50,37 @@ public class ListDataAdapter extends ArrayAdapter {
     @Nullable
     @Override
     public Object getItem(int position) {
+
         return list.get(position);
     }
 
     @NonNull
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View r = convertView;
-        Lhandler lh ;
-        if (r == null) {
+        View row = convertView;
+        Lhandler lh;
+        if (row == null) {
             LayoutInflater lf = (LayoutInflater) this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            r = lf.inflate(R.layout.raw_wise,parent,false);
+            row = lf.inflate(R.layout.patientcontacts_row_wise, parent, false);
             lh = new Lhandler();
-            lh.p_name = (TextView)r.findViewById(R.id.user_name);
-            lh.p_age = (TextView)r.findViewById(R.id.user_age);
-            lh.p_phone = (TextView)r.findViewById(R.id.User_contactno);
-            r.setTag(lh);
+            lh.name = (TextView) row.findViewById(R.id.user_name);
+            lh.age = (TextView) row.findViewById(R.id.user_age);
+            lh.phone = (TextView) row.findViewById(R.id.User_contactno);
+            lh.id=(TextView)row.findViewById(R.id.user_id) ;
+            row.setTag(lh);
 
+        } else
+        {
+            lh = (Lhandler) row.getTag();
         }
-        else {
-            lh = (Lhandler) r.getTag();
-        }
-        DataProvider dp = (DataProvider) this.getItem(position);
-        lh.p_name.setText(dp.getName());
-        lh.p_phone.setText(dp.getContact_no());
-        lh.p_age.setText(dp.getAge());
 
-        return super.getView(position, convertView, parent);
+            DataProvider dp = (DataProvider)this.getItem(position);
+            lh.name.setText(dp.getName());
+            lh.phone.setText(dp.getContact_no());
+            lh.age.setText(dp.getAge());
+            lh.id.setText(dp.getId());
+        return row;
+        }
     }
-}
+
 

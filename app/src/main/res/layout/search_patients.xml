@@ -7,14 +7,14 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="59dp"
+        android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/search_patients"
-        android:hint="Search here" />
+        android:hint="Enter search name" />
 
     <Button
-        android:text="enter"
+        android:text="Search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button_click_search"
@@ -54,10 +54,9 @@
         <TextView
             android:text="The phone number:- "
             android:textSize="20dp"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/textView14"
-            android:layout_weight="1" />
+            android:id="@+id/textView14" />
 
         <TextView
             android:text="Displays Contact Number"

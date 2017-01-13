@@ -39,7 +39,7 @@ public class Display extends Activity {
     EditText ed ;
     ArrayAdapter<String> adapter ;
     SQLiteDatabase database;
-    DatabaseHelper dbh;
+    com.example.shreyagupta.login_register.DatabaseHelper dbh;
     Cursor csr ;
 
     @Override
@@ -164,21 +164,31 @@ public class Display extends Activity {
     }*/
 
     public void view_data(View vw1){
-        Intent in = new Intent(Display.this,DataListViewActivity.class);
-        startActivity(in);
+        if (vw1.getId() == R.id.viewButton) {
+            Intent in = new Intent(Display.this,DataListViewActivity.class);
+            startActivity(in);}
+
     }
+
+
+    /*public void OnListSearchClick (View vv) {
+        p   if (vv.getId() == R.id.ListViewSearch) {
+            Intent intent = new Intent(Display.this,List_Search.class);
+            startActivity(intent);
+}
+        }*/
 
     public void search_click (View vw2){
         if (vw2.getId() == R.id.button_search) {
-            Intent i = new Intent(Display.this, Search_activity.class);
-            startActivity(i);
+        Intent i = new Intent(Display.this, Search_activity.class);
+        startActivity(i);
         }
-    }
-        public void B_proceed(View vw) {
+        }
+public void B_proceed(View vw) {
         if (vw.getId() == R.id.p_proceed) {
-            Intent i = new Intent(Display.this, Registration.class);
-            startActivity(i);
+        Intent i = new Intent(Display.this, Registration.class);
+        startActivity(i);
         }
 
         }
-    }
+        }
